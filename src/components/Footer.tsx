@@ -21,6 +21,9 @@ export function Footer() {
             TechSilon Solutions
           </a>
         </p>
+        <p className="text-center text-xs opacity-70">
+          Crafted by <span className="font-medium text-foreground/80">Sujit</span>
+        </p>
         <a
           href="https://github.com"
           target="_blank"
