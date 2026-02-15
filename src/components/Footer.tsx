@@ -1,14 +1,26 @@
-import { Eye } from "lucide-react";
+import { APP_VERSION } from "@/lib/version";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
     <footer className="border-t py-6 mt-12">
-      <div className="container flex flex-col items-center gap-2 text-sm text-muted-foreground sm:flex-row sm:justify-between">
+      <div className="container flex flex-col items-center gap-3 text-sm text-muted-foreground sm:flex-row sm:justify-between">
         <div className="flex items-center gap-2">
-          <Eye className="h-4 w-4" />
-          <span>SeeWhozThere v1.0</span>
+          <img src={logo} alt="SeeWhozThere" className="h-5 w-5 rounded" />
+          <span className="font-medium">SeeWhozThere</span>
+          <span className="text-xs opacity-60">v{APP_VERSION}</span>
         </div>
-        <p>Raspberry Pi Face Recognition Dashboard</p>
+        <p className="text-center">
+          A product by{" "}
+          <a
+            href="https://ai-focus.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-primary hover:underline"
+          >
+            TechSilon Solutions
+          </a>
+        </p>
         <a
           href="https://github.com"
           target="_blank"

@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { Eye, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navItems = [
   { label: "Dashboard", path: "/" },
@@ -17,7 +18,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b bg-card/80 backdrop-blur-md">
       <div className="container flex h-14 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg">
-          <Eye className="h-5 w-5 text-primary" />
+          <img src={logo} alt="SeeWhozThere logo" className="h-7 w-7 rounded" />
           <span>SeeWhozThere</span>
         </Link>
 
